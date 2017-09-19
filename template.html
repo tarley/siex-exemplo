@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="app/css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <nav class="light-blue darken-4">
+        <div class="nav-wrapper">
+            <a id="button-menu" class="btn-floating btn-large waves-effect waves-light red" data-activates="slide-out">
+                <i class="material-icons">menu</i>
+            </a>
+            <label class="brand-logo" style="margin: 0 0 0 10px">Siex Newton</label>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <a href="#!user"><img src="/app/assets/img/logo-newton.png"></a>
+                <a href="#!name"><span class="name">Tarley Lana</span></a>
+                <a href="#!email"><span class="email">tarley.lana@gmail.com</span></a>
+            </div>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">SIEX NEWTON</a></li>
+        <li><a class="waves-effect" href="#!/Fundadores">Ajuda</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">AÇÕES DE EXTENSÃO</a></li>
+        <li><a class="waves-effect" href="#!/Fundadores">Pesquisar</a></li>
+        <li><a class="waves-effect" href="#!/Fundadores">Registrar ou Atualizar ação</a></li>
+        <li><a class="waves-effect" href="#!/Fundadores">Submissão - Programa de extensão</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">CONTATO E SUPORTE</a></li>
+        <li><a class="waves-effect" href="#!/Fundadores">Fale Conosco</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">OUTRAS OPÇÕES</a></li>
+        <li>
+            <a class="waves-effect" href="#!/Fundadores">
+                <i class="material-icons left">sentiment_very_satisfied</i>Fundadores do sistema
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect">
+                <i class="material-icons left">close</i>Sair do sistema
+            </a>
+        </li>
+    </ul>
+
+    <main>
+        <div class="container">
+            <!-- CORPO -->
+        </div>
+    </main>
+
+
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Sistemas de Informação</h5>
+                    <p class="grey-text text-lighten-4">
+                        Sistema desenvolvido pelos alunos do curso de Sistemas de Informação - 6º Periodo - Newton Paiva.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Pagina do curso</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="http://www.newtonpaiva.br/">Newton Paiva</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.newtonpaiva.br/graduacao/sistemas-de-informacao">Curso Sistemas de Informação</a></li>
+                        <li><a class="grey-text text-lighten-3" href="http://tarley.eti.br">Tarley Lana</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#button-menu').sideNav({
+                menuWidth: 300,
+                edge: 'left',
+                closeOnClick: true,
+                draggable: true,
+                onOpen: function(el) {},
+                onClose: function(el) {},
+            });
+        });
+    </script>
+</body>
+
+</html>
